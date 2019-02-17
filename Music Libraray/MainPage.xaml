@@ -1,0 +1,49 @@
+﻿<Page
+    x:Class="Music_Libraray.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Music_Libraray"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >
+
+    <Grid  Background="Pink" >
+        <MediaPlayerElement x:Name="mediaPlayer"/>
+        <ComboBox HorizontalAlignment="Left" PlaceholderText="Pick a language" Margin="527,235,0,0"   VerticalAlignment="Top" Width="240">
+            <x:String>English</x:String>
+            <x:String>Telugu</x:String>
+            <x:String>Hindi</x:String>
+            <x:String>Tamil</x:String>
+        </ComboBox>
+
+        <TextBlock HorizontalAlignment="Left" Margin="149,229,0,0" Text="Languages:  " FontSize="25" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="338,64,0,0" Text="My Music Library" FontSize="30" TextWrapping="Wrap" VerticalAlignment="Top" Height="51" Width="336"/>
+        <TextBlock HorizontalAlignment="Left" Margin="176,351,0,0" Text=" English: " FontSize="25" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="179,424,0,0" Text=" Telugu:" FontSize="25" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <ComboBox x:Name="ComboBox1" HorizontalAlignment="Left" PlaceholderText="Pick a song" Margin="527,351,0,0" VerticalAlignment="Top" Width="406" SelectionChanged="ComboBox1_SelectionChanged_1">
+            <x:String>Mission Impossible Fallout Theme</x:String>
+        </ComboBox>
+
+        <ComboBox x:Name="ComboBox2" HorizontalAlignment="Left" PlaceholderText="Pick a song" Margin="527,424,0,0" VerticalAlignment="Top" Width="406" SelectionChanged="ComboBox_SelectionChanged">
+            <x:String>Dhivara</x:String>
+            <x:String>Mamathala thali</x:String>
+            <x:String>Manohari</x:String>
+            <x:String>Nippule Swasaga</x:String>
+            <x:String>Pacha Bottasi</x:String>
+            <x:String>Sivuni Aana</x:String>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="195,501,0,0"  FontSize="25"  Text="Hindi: " TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <ComboBox x:Name="ComboBox3" HorizontalAlignment="Left" Margin="527,500,0,0"   PlaceholderText="Pick a song" VerticalAlignment="Top" Width="406" SelectionChanged="ComboBox3_SelectionChanged">
+            <x:String>1234 Get On The Dance Floor - Chennai Express</x:String>
+            <x:String>Lungi Dance The Thalaiva - Chennai Express</x:String>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="197,572,0,0" Text="Tamil:" FontSize="25" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <ComboBox x:Name="ComboBox4" HorizontalAlignment="Left" Margin="527,568,0,0" PlaceholderText="Pick a song" VerticalAlignment="Top" Width="406" SelectionChanged="ComboBox4_SelectionChanged">
+            <x:String>Why This Kolaveri Di</x:String>
+        </ComboBox>
+
+        <Button Content="Play" FontSize="24"  HorizontalAlignment="Left" Margin="414,652,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Content="Pause" FontSize="24" HorizontalAlignment="Left" Margin="544,652,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+    </Grid>
+</Page>
